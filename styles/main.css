@@ -38,4 +38,20 @@
   .container {
     position: relative;
     background-color: #212121;
+    /* Do I want this or not? */
+    height: 100vh;
   }
+
+  #navbar {
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
