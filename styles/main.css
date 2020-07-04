@@ -68,4 +68,25 @@
     background-blend-mode: saturation;
     height: 100vh;
   }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 3s;
+  }
+  
+  .welcome-header {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #2862B4;
+  }
+
+  .welcome-section--photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
   
