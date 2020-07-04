@@ -63,7 +63,7 @@
   #navbar a:hover {
     background-color: #2862B4;
   }
-  
+
   @media (max-width: 600px) {
     #navbar {
       flex-direction: column;
@@ -104,6 +104,12 @@
     color: #2862B4;
   }
 
+  @media (max-width: 600px) {
+    .welcome-header {
+      font-size: 3rem;
+   }
+ }
+
   .welcome-section--photo {
     height: 150px;
     width: 150px;
@@ -111,11 +117,26 @@
     object-fit: cover;
   }
 
+  @media (max-width: 600px) {
+    .welcome-section--photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    }
+  }
+
   #contact {
     padding: 4rem;
     display: flex;
     justify-content: space-evenly;
   }
+
+  @media (max-width: 600px) {
+    #contact {
+      flex-direction: column;
+      align-items: center;
+   }
+ }
 
   .contact-name {
     display: flex;
@@ -128,10 +149,23 @@
     transform: translateY(1rem);
   }
 
+  @media (max-width: 600px) {
+    .contact-name {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+   }
+ }
+
   .fab {
     font-size: 4rem;
     color: #DDDDDD;
     padding-right: 1rem;
   }
+
+  @media (max-width: 600px) {
+    .fab {
+      font-size: 2rem;
+   }
+ }
   
   
