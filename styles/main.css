@@ -20,3 +20,8 @@
     font-family: 'Work Sans', sans-serif;
     color: #141414;
   }
+
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+  }
