@@ -56,6 +56,16 @@
     align-items: center;
   }
 
+  #navbar a {
+    height: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  #navbar a:hover {
+    background-color: #2862B4;
+  }
+
   #welcome-section {
     display: flex;
     flex-direction: column;
