@@ -38,8 +38,6 @@
   .container {
     position: relative;
     background-color: #212121;
-    /* Do I want this or not? */
-    height: 100vh;
   }
 
   #navbar {
@@ -104,4 +102,22 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+  #contact {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact-name {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    transition: 1s;
+  }
+  
+  .contact-name:hover {
+    transform: translateY(1rem);
+  }
+  
   
