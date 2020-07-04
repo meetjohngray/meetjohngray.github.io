@@ -42,7 +42,7 @@
 
   #navbar {
     /* This is repeated from container. One needs to go */
-    background-color: #212121;
+    background-color:rgba(19,19,19,.7);
     position: fixed;
     top: 0;
     left: 0;
