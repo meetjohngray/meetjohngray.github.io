@@ -126,7 +126,13 @@
   }
 
   #contact {
-    padding: 4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(19,19,19, .5);
+    width: 100vw;
+    padding: 2rem 4rem;
     display: flex;
     justify-content: space-evenly;
   }
@@ -141,7 +147,7 @@
   .contact-name {
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 1s;
   }
   
@@ -157,7 +163,7 @@
  }
 
   .fab {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #DDDDDD;
     padding-right: 1rem;
   }
