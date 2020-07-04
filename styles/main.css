@@ -119,5 +119,11 @@
   .contact-name:hover {
     transform: translateY(1rem);
   }
+
+  .fab {
+    font-size: 4rem;
+    color: #DDDDDD;
+    padding-right: 1rem;
+  }
   
   
