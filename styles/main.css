@@ -40,6 +40,10 @@
     margin-bottom: 1rem;
   }
 
+  strong {
+    font-family: 'Works Sans Medium 500', sans-serif;
+  }
+
   a {
     text-decoration: none;
     color: #7FACD4;
