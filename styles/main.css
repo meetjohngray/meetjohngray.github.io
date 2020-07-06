@@ -1,3 +1,4 @@
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,14 +22,23 @@
     color: #141414;
   }
 
+  /* Typography */
   h1,h2 {
     font-family: 'Space Mono', monospace;
     font-size: 3rem;
   }
   
+  h1 {
+    text-align: center;
+  }
+
   h2 {
     font-size: 2.5rem;
-  } 
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
 
   a {
     text-decoration: none;
@@ -39,11 +49,25 @@
      color: #fff;
   }
   
+  ul {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
   .container {
     position: relative;
     background-color: #212121;
   }
 
+  pre {
+    background-color: #dddddd;
+    margin-top: .5rem;
+  }
+
+  code {
+      background-color: #dddddd;
+  }
+
+/* Navigation */
   #navbar {
     /* This is repeated from container. One needs to go */
     background-color:rgba(19,19,19,.7);
@@ -76,6 +100,7 @@
    }
  }
 
+ /* Welcome Section */
   #welcome-section {
     display: flex;
     flex-direction: column;
@@ -129,13 +154,17 @@
     }
   }
 
+  /* Content Areas */
   .content-area {
-    width: 60%;
+    width: 75%;
+    height: 75%;
     background-color: #E7E7E7;
     padding: 2rem 4rem;
     border-radius: 10px;
+    overflow: scroll;
   }
 
+  /* Contact Section */
   #contact {
     position: fixed;
     bottom: 0;
