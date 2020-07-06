@@ -41,7 +41,12 @@
   }
 
   strong {
-    font-family: 'Works Sans Medium 500', sans-serif;
+    font-family: 'Work Sans Medium 500', sans-serif;
+  }
+
+  blockquote {
+    margin-left: 2rem;
+    font-style: italic;
   }
 
   a {
