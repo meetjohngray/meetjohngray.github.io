@@ -18,10 +18,117 @@
       
       <section id="welcome-section">
         <div class="content-area">
-            <h2>!Blog Title!</h2>
-            <p>
-                !CONTENT GOES HERE!
-            </p>
+            <h2>Putting Things in Their Proper Place with CSS Position</h2>
+
+                <p>The CSS position property is one of the most valuable assets developers have when creating web pages. With CSS positioning, we can precisely control how different block level elements display on the page. This opens up lots of creative and useful possibilities. Let’s take a few minutes to examine what CSS positioning does and how to use it.</p>
+                
+                <h2>What Does the Position Property Do?</h2>
+                
+                <ul>
+                  <li>It defines how an element’s location on the page is rendered in a web browser</li>
+                  <li>It allows us to override the normal flow behaviour of an HTML document</li>
+                </ul>
+                
+                <p>The position property takes five possible values:</p>
+                
+                <ul>
+                  <li>static</li>
+                  <li>relative</li>
+                  <li>absolute</li>
+                  <li>fixed</li>
+                  <li>sticky</li>
+                </ul>
+                
+                <p>The default value for the position property is static, meaning the element will behave as would be expected in the flow of the document. In this article, let’s focus on the relative, absolute, and fixed position values.</p>
+                
+                <h2>How does Position Property Work<code>?
+                </code></h2>
+                
+                <ul>
+                  <li>First, we must declare which element we want to position and what value we want to use</li>
+                </ul>
+                
+                <pre>
+                  <code>.main-content {
+                    position: value;
+                    }
+                  </code>
+                </pre>
+                
+                <ul>
+                  <li>We then use the left, right, top, bottom, and z-index properties to determine how block level elements are displayed on the page</li>
+                </ul>
+                
+                <pre>
+                  <code>.main-content {
+                    position: value;
+                    top: 20px;
+                    left: 40px;
+                    }
+                  </code>
+                </pre>
+                
+                <ul>
+                  <li>We can use any units to do this: pixels, mms, rems, %, etc.</li>
+                </ul>
+                
+                <h2>Why Should We Use the CSS Position Property?</h2>
+                
+                <p>The position property allows us to do some interesting things with our layouts. Some examples of when this might be useful include the following:</p>
+                
+                <ul>
+                  <li>Positioning an element to float over the top of other elements</li>
+                  <li>To be more creative with our layout and break out of the boxes by offsetting elements</li>
+                  <li>To have an element remain in place, such as a navigation bar</li>
+                </ul>
+                
+                <p>Now let’s take a closer look at the three most widely used values for CSS position.</p>
+                
+                <h3>Relative</h3>
+                
+                <ul>
+                  <li>The relative value changes an element’s position in the document <em>relative to itself.</em></li>
+                  <li>The units of the left, right, top, and bottom properties effectively push against the specified side of the box. This has the effect of moving it in away from what is specified.
+                
+                    <pre>
+                      <code>postion: relative;
+                            top: 50px;
+                            left: 40px;
+                        </code>
+                      </pre>
+                
+                    <p>This will move the element away from the top by 50px and away from the left by 40px, effectively moving it down and to the right.</p></li>
+                  <li>Position relative is useful when we want to offset an element from its normal flow on the page.</li>
+                  <li>It is also useful when we want to position a child of this element absolutely. See below.</li>
+                </ul>
+                
+                <h3>Absolute</h3>
+                
+                <ul>
+                  <li>When an element has <code>position: absolute</code>, it is displayed positioned relative to its parent elements.</li>
+                  <li>Other elements will behave as it that element is no longer in the document i.e. they will collapse into the space the absolutely positioned element previously occupied</li>
+                  <li>Left, top, right, and bottom determine the element’s final position. To put it another way, these properties specify the distance the element should be from its containing element’s sides.</li>
+                  <li>Position is relative to it’s closest positioned ancestor, so the parent element MUST have a value other than static</li>
+                  <li>If there are no positioned ancestor elements, it is positioned relative to the <code>&lt;html&gt;</code> element. In other words, it will be positioned absolutely relative to the viewport </li>
+                  <li>Because of the above, <code>position: absolute</code> is almost always used in conjunction with <code>position: relative</code> used on its parent element.</li>
+                  <li>Absolute position is very useful in the following situations:
+                
+                    <ul>
+                      <li>Popup boxes</li>
+                      <li>Control menus</li>
+                      <li>Drag and drop UI features</li>
+                    </ul></li>
+                </ul>
+                
+                <h3>Fixed</h3>
+                
+                <ul>
+                  <li>Like absolute positioning, <code>position: fixed</code> also removes an element from the normal flow of a document.</li>
+                  <li>BUT, a fixed position element is always positioned relative to the browser viewport</li>
+                  <li>Fixed elements are not affected by scrolling. This makes them especially useful for creating navigation elements.</li>
+                </ul>
+                
+                <p>So, now that you’ve had this short introduction to CSS positioning, go out and try it yourself. I think you’ll find a number of useful ways to put this property to use in your designs. Also, go have a look around the internet and see what you can do with <code>position: sticky</code>. Go forth and code.</p>
         </div>
       </section>
 
