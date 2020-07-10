@@ -182,13 +182,13 @@ background-color: #212121;
 .content-area {
   width: 75%;
   height: 75%;
+  min-height: fit-content;
   margin-top: 10rem;
   margin-bottom: 5rem;
   background-color: #E7E7E7;
   padding: 2rem 4rem;
   border-radius: 10px;
-  /* !!!Fix This */
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 /* Contact Section */
