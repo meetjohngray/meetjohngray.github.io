@@ -131,7 +131,7 @@ background-color: #212121;
       no-repeat center center fixed;
   background-size: cover;
   background-blend-mode: saturation;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .welcome {
@@ -178,19 +178,21 @@ background-color: #212121;
 .content-area {
   width: 75%;
   height: 75%;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   background-color: #E7E7E7;
   padding: 2rem 4rem;
   border-radius: 10px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 /* Contact Section */
 #contact {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  left: 0;
-  z-index: 11;
-  background-color: rgba(19,19,19, .5);
+  left: 0; */
+  /* z-index: 11; */
+  background-color: rgb(19,19,19);
   width: 100vw;
   padding: 2rem 4rem;
   display: flex;
