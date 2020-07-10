@@ -58,7 +58,7 @@ a:hover {
     color: #212121;
 }
 
-ul {
+ul, ol {
   margin-left: 3rem;
   margin-bottom: 1rem;
 }
@@ -70,6 +70,10 @@ ul {
 
   code {
       background-color: #dddddd;
+  }
+
+  figure {
+    padding: 3rem 0;
   }
 
 /* Utility Classes */
