@@ -187,7 +187,8 @@ background-color: #212121;
   background-color: #E7E7E7;
   padding: 2rem 4rem;
   border-radius: 10px;
-  /* overflow: scroll; */
+  /* !!!Fix This */
+  overflow: scroll;
 }
 
 /* Contact Section */
