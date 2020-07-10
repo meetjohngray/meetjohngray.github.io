@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/d586ede707.js" crossorigin="anonymous"></script>    
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css" type="text/css">
+    <title>Meet John Gray</title>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <nav id="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="../blogIndex.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <section id="welcome-section">
+        <div class="content-area">
+            <h2>!Blog Title!</h2>
+            <h1>Sprint 3 Technical</h1>
+
+            <p></p>
+            
+            <p>So you want to learn about web development but you don’t know the first thing about it? Hopefully, by the end of this post, you’ll have gained some familiarity with some of the languages and techniques used by web developers today. </p>
+            
+            <p>Though technically not programming languages, HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are used to create a user sees when they look at a web page. HTML is like a house. It provides the foundation, the walls, and the roof. It provides the basic furniture needed to make the house usable and can also hang some pictures on the wall. But without CSS, it is a just a drab cinderblock building devoid of much colour or personality. Like this.</p>
+            
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="meetjohngray" data-slug-hash="yLeEBWB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Simple HTML Example 2">
+              <span>See the Pen <a href="https://codepen.io/meetjohngray/pen/yLeEBWB">
+              Simple HTML Example 2</a> by John Gray (<a href="https://codepen.io/meetjohngray">@meetjohngray</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  
+            <p>That’s where CSS comes in. It is the professional decorator that comes in and paints or wall papers the walls. It decides on how to arrange the furnishings and perhaps swaps them out for a different style or adds new ones. CSS might even decide to rearrange the rooms of the house, creating a better layout and flow. CSS can take the same house built by HTML and transform its look in innumerable ways. Here’s the same HTML from above, but now we’ve added a few lines of CSS.</p>
+  
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="meetjohngray" data-slug-hash="VwedZLa" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Simple HTML Example">
+              <span>See the Pen <a href="https://codepen.io/meetjohngray/pen/VwedZLa">
+              Simple HTML Example</a> by John Gray (<a href="https://codepen.io/meetjohngray">@meetjohngray</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+           
+            <p>For a great example of how radically CSS can change the look of identical HTML, you should check out <a href="http://www.csszengarden.com/" title="CSS Zen Garden">CSS Zen Garden</a>. </p>
+            
+            <p>But what if you want your web page to be more like a smart home? One that opens the doors as you get near them, or responds in other ways to your requests. That’s where JavaScript (JS) comes in. JS allows developers to add interactivity to web pages. It does this through using a variety of techniques including utilising control flow and loops.</p>
+            
+            <p>Control flow allows JavaScript to do a series of things while making logical decisions about how to proceed. One way it does this is through If/Else statements. This is a technique all of do everyday without even thinking about it. If I walk into my flat and the temperature is too cold, I will turn on the heater and put on a warm hat. If the window is open, I will close it. But if the room is too hot, I will turn on the fan. Else if the temperature is just right, I won’t do anything at all.</p>
+            
+            <p>Loops help us (and JS) repeat a series of steps until reaching a specified result. When I lose my keys in the house, I loop through all the places I normally misplace them. On top of the refrigerator, in the pocket of the pair of pants I wore yesterday, etc. I do this until I find my keys. </p>
+            
+            <p>JavaScript uses arrays and objects to store the information it needs to perform the tasks we ask of it. Arrays can be used to store simple collections of data, such as items entered into a grocery shopping list. </p>
+            
+            <p><code>let shopping_list = [bananas, apples, oatmeal, tofu, hummus, chick peas]</code></p>
+            
+            <p>Starting from zero, each item in the list is automatically assigned a sequential number by JS. These numbers make up an index. The index can be used to access each item (value). Using the above example, bananas would have an index of 0, apples would be 1, etc.</p>
+            
+            <p>Though useful, this method of accessing information is not the most user friendly or versatile. That’s where objects come in. Objects allow developers to create collections of data utilising logical indexes. This allows them to call the value they are looking for by name. An object could be used to contain information for a more complex shopping list. This list could be indexed according to what aisle of the store the items are located. Below is an example of what this object could look like.</p>
+            
+            <pre><code>let shopping_list = {
+                  &#39;produce&#39;: &#39;bananas&#39;, &#39;apples&#39;,
+                  &#39;dried goods&#39;: &#39;oatmeal&#39;, &#39;chick peas&#39;,
+                  &#39;refrigerated&#39;: &#39;tofu&#39;, &#39;hummus&#39; 
+                  }</code></pre>
+            
+            <p>Now that we have the information we need stored, functions can be used to help us access it. Functions are pieces of code that perform repeated tasks, preventing developers from having to rewrite the same code over and over. Below is a function that allows us to access the information from the object we created above.</p>
+            
+            <pre><code>function get_items(list, category) {
+              console.log(list[category])
+            }
+            
+            get_items(shopping_list,&#39;produce&#39;)</code></pre>
+            
+            <p>Result:<em>
+            </em></p>
+            
+            <pre><code>[&quot;bananas&quot;, &quot;apples&quot;]</code></pre>
+            
+            <p>This function takes the <code>shopping_list</code> object and prints out a list of just the items specified by the category argument.</p>
+            
+            <p>HTML, CSS, and JavaScript do what they do by interacting with the Document Object Model (DOM). The DOM is the builder. It takes the blueprint provided by HTML and uses a web browser to construct a webpage. In so doing it creates a tree-like structure where each branch ends in a node. These nodes are the elements that make up the house. Some are visible and some are not, like the wiring, plumbing, and duct work. CSS and JS use the DOM as the framework on which to hang their styles and interactions respectively.</p>
+                      
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-name">
+          <i class="fab fa-free-code-camp"></i><a href="https://www.freecodecamp.org/meetjohngray" target="_blank"
+            id="profile-link">freeCodeCamp</a>
+        </div>
+   
+        <div class="contact-name">
+          <i class="fab fa-twitter"></i><a href="https://twitter.com/meetjohngray" target="_blank"
+            id="profile-link">Twitter</a>
+        </div>
+   
+        <div class="contact-name">
+          <i class="fab fa-github"></i><a href="https://github.com/meetjohngray" target="_blank"
+            id="profile-link">GitHub</a>
+        </div>
+      
+      </section>
+    </div>
+  </body>
+</html>
