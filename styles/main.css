@@ -195,7 +195,7 @@ background-color: #212121;
 
 .projects-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px 20px;
     padding: 4rem;
 }
@@ -208,7 +208,7 @@ background-color: #212121;
 }
 
 .project-tile {
-  background: #141414;
+  background: #E7E7E7;
   text-align: center;
   height: 100%;
   margin-bottom: 3rem;
