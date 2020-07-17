@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/d586ede707.js" crossorigin="anonymous"></script>    
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css" type="text/css">
+    <title>Meet John Gray</title>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <nav id="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#projects">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <section id="welcome-section">
+        <div class="content-area">
+          <h1>Sprint 4 Technical Blog: Problem Solving</h1>
+
+          <figure>
+              <iframe src="https://giphy.com/embed/3otPoCmoVM8gvKbAEo" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen>
+              </iframe>
+              <p>
+                <a href="https://giphy.com/gifs/quentin-tarantino-pulp-fiction-harvey-keitel-3otPoCmoVM8gvKbAEo">via GIPHY</a>
+              </p>
+          </figure>
+
+          <h2>A Simple Problem</h2>
+          
+          <p>
+            <strong>The Problem</strong>
+          </p>
+          
+          <p>
+            I was working on Super FizzBuzz this week and things were just not working out. My logic seemed sound. I could console.log all the multiples of threes and turn them into fizzes. Ditto the multiples of five transformed into buzzes. But multiples of both three and five? There was no FizzBuzz to be found. After some careful googling, the simple answer became clear. The problem was the order of my logic. I was catching the instances of three and five multiples BEFORE trying to catch the multiples of both numbers. Because of this, my code never caught the FizzBuzz numbers because it had already converted them into either a Fizz or a Buzz.
+          </p>
+          
+          <p>
+            <strong>The Solution</strong>
+          </p>
+          
+          <p>
+            Logic order matters. All I had to do was reorder my logic so that the multiples of both three and five were converted to FizzBuzz before the code looked for multiples of one or the other. If you want to learn about the many ways you can approach FizzBuzz, <a href="https://learnjswith.me/javascript-fizzbuzz/" title="JavaScript FizzBuzz">check this out</a>.
+          </p>
+          
+          <h2>An Elegant Solution</h2>
+          
+          <p>
+            <strong>The Problem</strong>
+          </p>
+          
+          <p>
+            I once worked as the Staffing Coordinator at the North Carolina Outward Bound School. My job was to process 100+ employee request’s for work assignments on wilderness education programs ranging in length from a few days to three-months. When I started the job, the work requests were received via handwritten pieces of paper that often did not capture all the information needed to process the requests. This method also made sorting and interpreting the data cumbersome.
+          </p>
+          
+          <p>
+            <strong>The Solution</strong>
+          </p>
+          
+          <p>
+            I changed the system so that employees had to submit their work requests via <a href="https://www.surveymonkey.com/" title="SurveyMonkey website">SurveyMonkey</a>. This allowed me to capture all the information I needed and provided me with the tools to sort and interpret it in useful ways. Solving this problem was when I first became interested in using technology to solve everyday problems and to eliminate unnecessary busy work.
+          </p>
+          
+          <h2>Problem Solving Techniques</h2>
+          
+          <p>
+            Googling and console.logging top my list of favourite problem-solving techniques. I also like just trying different things until something works, though I can’t recommend this as it is not the best use of time. I find that stepping away from a problem can often allow me to solve it. Sometimes new solutions present themselves unbidden while I’m out for a run or taking a shower.
+          </p>
+          
+          <p>
+            Some things I need to utilise more are writing pseudocode and asking for help. When I was stuck on one of the kata challenges, asking a foundation facilitator for a hand was extremely useful as it helped me to understand a concept I’m not sure I would have just searching for the answer on my own.
+          </p>
+          
+          <p>
+            Though frustrating sometimes, I find that I enjoy the challenge of solving problems. Thinking of problem-solving as a game can allow me to have some fun with it. I love the feeling of finding a solution after hours (or days) of trial and error. I look forward to both using both my preferred problem-solving skills and trying some new ones as I navigate the challenges that Dev Academy will present.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-name">
+          <i class="fab fa-free-code-camp"></i><a href="https://www.freecodecamp.org/meetjohngray" target="_blank"
+            id="profile-link">freeCodeCamp</a>
+        </div>
+   
+        <div class="contact-name">
+          <i class="fab fa-twitter"></i><a href="https://twitter.com/meetjohngray" target="_blank"
+            id="profile-link">Twitter</a>
+        </div>
+   
+        <div class="contact-name">
+          <i class="fab fa-github"></i><a href="https://github.com/meetjohngray" target="_blank"
+            id="profile-link">GitHub</a>
+        </div>
+      
+      </section>
+    </div>
+  </body>
+</html>
